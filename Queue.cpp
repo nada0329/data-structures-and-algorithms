@@ -110,7 +110,7 @@ bool Queue::isFull()
     }
 
 }
-void Queue::clear_Queue()
+/*void Queue::clear_Queue()
 {
     if(isEmpty())
     {
@@ -127,6 +127,22 @@ void Queue::clear_Queue()
             deleted=head;
         }
         rear=NULL;
+    }
+}
+*/
+void Queue::clear_Queue()
+{
+    if(isEmpty())
+    {
+        cout<<"Empty Queue \n";
+        return;
+    }
+    else
+    {
+        while(!isEmpty())
+        {
+            Dequeue();
+        }
     }
 }
 void Queue::Display()
